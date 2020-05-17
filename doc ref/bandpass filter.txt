@@ -1,0 +1,24 @@
+algorithm FIR_bandpass filter
+/*
+	Input:
+	f1, the lowest frequency to be included, in Hz
+	f2, the highest frequency to be included, in Hz
+	f_samp, sampling frequency of the audio signal to be filtered, in Hz
+	N, the order of the filter; assume N is odd
+	Output:
+	a bandpass FIR filter in the form of an N-element array */
+{
+	//Normalize f_c and ? _c so that ? is equal to the Nyquist angular frequency
+	f1_c = f1/f_samp
+	f2_c = f2/f_samp
+	?1_c = 2*?*f1_c
+	?2_c = 2*?*f2_c
+	middle = N/2 /*Integer division, dropping remainder*/
+	for i = -N/2 to N/2
+	if (i == 0) fltr(middle) = 2*f2_c – 2*f1_c
+	else
+		fltr(i + middle) = sin(?2_c*i)/(?*i) –
+		sin(?1_c*i)/(?*i)
+	//Now apply a windowing function to taper the edges of the filter, e.g.
+	//Hamming, Hanning, or Blackman
+}
