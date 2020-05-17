@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Innerspec/XADC_UART/XADC_UART.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Innerspec/XADC_UART/XADC_UART.srcs/sources_1/new/minimal_uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'minimal_uart_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Innerspec/XADC_UART/XADC_UART.srcs/sources_1/new/xadc_wiz_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xadc_wiz_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Innerspec/XADC_UART/XADC_UART.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_tb'
